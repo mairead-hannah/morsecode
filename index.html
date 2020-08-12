@@ -3,23 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="app.js" async defer></script>
   <title>Morse Code Translator</title>
 </head>
+
 <body>
 
-<h1>Morse Code Translator</h1>
+  <img id="background" src="./images/morse-code8.png">
+  
+  <main>
+    <h1>Morse Code Translator</h1>
 
-<form action="">
-  <textarea name="text-input" id="text-input" placeholder="Type your message here" rows="10" cols="50"></textarea>
-  <button>Click to translate</button>
-</form>
+    <form action="">
+      <textarea name="text-input" id="text-input" placeholder="Type your message in English here" rows="10" cols="40"></textarea>
+    </form>
+    
+    <button>Translate to Morse Code!</button>
+    
+    <div>
+      <p id="translation-result"></p>
+    </div>
 
-<div>
-  <p id="translation-result"></p>
-</div>
+    <!-- <p id="morse-code">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At temporibus autem beatae quam omnis dolorum atque, voluptatum sunt nisi fugit sint facere unde sit consequuntur quaerat explicabo dolores numquam a?
+    </p> -->
+
+<!-- 
+    <div id="parchment-container">
+      <img id="parchment" src="./images/parchment.png">
+      <p id="morse-code">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At temporibus autem beatae quam omnis dolorum atque, voluptatum sunt nisi fugit sint facere unde sit consequuntur quaerat explicabo dolores numquam a?
+      </p>
+    </div> -->
+
+
+    <!-- <img id="telegraph" src="./images/telegraph.png"> -->
+  </main>
 
   
+
 </body>
 </html>

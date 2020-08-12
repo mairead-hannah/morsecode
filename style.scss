@@ -1,3 +1,12 @@
+$gen-font: Helvetica, sans-serif;
+$mob-medium: 375px;
+$mob-large: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1366px;
+$largescreen: 2560px;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -5,26 +14,118 @@
   font-family: sans-serif;
 }
 
-form {
-  height: 40vh;
-  width: 300px;
-  margin: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#background {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+main { 
+  text-align: center;
+
+  
+
+  h1 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2em;
+    font-weight: 799;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    text-shadow: 0 0 5px white, 
+                  0 0 10px white,
+                  0 0 30px white; 
+    
+    
+    @media (min-width: $mob-medium) {
+      font-size: 2em;
+      padding-top: 0.7em;
+      padding-bottom: 0.7em;
+    }
+    @media (min-width: $mob-large) {
+      font-size: 2em;
+      font-weight: 900;
+      padding-top: 0.5em;
+    }
+    @media (min-width: $tablet) {
+      font-size: 3em;
+      padding: 0.6em;
+    }
+    @media (min-width: $laptop) {
+      font-size: 4em;
+    }
+    @media (min-width: $desktop) {
+      font-size: 5em;
+      padding: 0.8em;
+    }
+  }
+
+  form {
+    margin-top: 2em;
+    margin-bottom: 1em;
+
+    #text-input {
+      font-family: 'Oswald', sans-serif;
+    }
+  }
 
   button {
     width: 7em;
     background-color: #8b3a3a;
     color: white;
-    padding: 0.2em;
-    font-size: 0.8em;
-    text-transform: uppercase;
+    padding: 1em;
+    // font-family: 'UnifrakturCook', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    // font-variant: small-caps;
+    // text-transform: uppercase;
     border-radius: 10px;
     cursor: pointer;
   }
+
+
+
+  p {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    padding-bottom: 2em;
+    // background: rgb(247, 245, 237);
+    background: rgb(163, 157, 148);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px black, 
+    0 0 10px rgb(204, 202, 198),
+    0 0 30px rgb(204, 202, 198); 
+    font-size: 2em;
+    font-weight: bold;
+    box-shadow: 0 0 10px black, 
+    0 0 20px rgb(92, 91, 89),
+    0 0 60px rgb(194, 192, 190); 
+  }
+
+  // #parchment-container {
+  //   position: relative;
+  //   text-align: center;
+  //   color: black;
+
+  //   #parchment {
+  //     width: 80%;
+  //   }
+
+  //   #morse-code {
+  //     position: absolute;
+  //     top: 20%;
+  //     left: 50%;
+  //     transform: translate(-50%, -50%);
+  //   }
+  // }
+
 }
 
-p {
-  padding: 1em;
-}
+
+
+

@@ -6,11 +6,11 @@ const translate = () => {
   const input = document.getElementById("text-input").value;
   let translatedText = ""; //needs to be a let not a const, so we can change it later
   for (let i = 0; i < input.length; i++) { //i represents the input?
-    for (let j = 0; j < 37; j++) {  //j represents the englishLetters array?
-      if (input[i].toLowerCase() == englishLetters[j]) { //I think this is matching the input letters to the array of English letters
+    for (let j = 0; j < englishLetters.length; j++) {  //j represents the position in the array
+      if (input[i].toLowerCase() == englishLetters[j]) { //This matches the input letter in position 'i' to it's equivalent in the english letters array - at position j
         translatedText += morseLetters[j]; //morse letters must be added to the translation
-        // translatedText += "\xa0\xa0\xa0"; //not sure this line is necessary
-        // break; //also not sure if this line is needed
+        translatedText += "\xa0\xa0\xa0"; //to have a break between letters (morse code requirement)
+        break; //to stop the array iterating after finding it's initial resut.
       }
     }
   }
