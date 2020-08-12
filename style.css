@@ -24,43 +24,48 @@ main h1 {
   font-size: 2em;
   font-weight: 799;
   padding-top: 0.6em;
-  padding-bottom: 0.6em;
   text-shadow: 0 0 5px white,  0 0 10px white, 0 0 30px white;
 }
 
 @media (min-width: 375px) {
   main h1 {
-    font-size: 2em;
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
+    font-size: 2.4em;
+    padding-top: 0.4em;
   }
 }
 
 @media (min-width: 425px) {
   main h1 {
-    font-size: 2em;
+    font-size: 2.8em;
     font-weight: 900;
-    padding-top: 0.5em;
+    padding-top: 0.3em;
   }
 }
 
 @media (min-width: 768px) {
   main h1 {
-    font-size: 3em;
-    padding: 0.6em;
+    font-size: 4em;
+    padding-top: 0.4em;
   }
 }
 
 @media (min-width: 1024px) {
   main h1 {
-    font-size: 4em;
+    font-size: 5em;
   }
 }
 
 @media (min-width: 1366px) {
   main h1 {
-    font-size: 5em;
-    padding: 0.8em;
+    font-size: 6em;
+    padding-top: 0.55em;
+  }
+}
+
+@media (min-width: 2560px) {
+  main h1 {
+    font-size: 8em;
+    padding-top: 1em;
   }
 }
 
@@ -69,8 +74,33 @@ main form {
   margin-bottom: 1em;
 }
 
+@media (min-width: 768px) {
+  main form {
+    margin-top: 3em;
+  }
+}
+
+@media (min-width: 1024px) {
+  main form {
+    margin-top: 4em;
+  }
+}
+
+@media (min-width: 1366px) {
+  main form {
+    margin-top: 5em;
+  }
+}
+
+@media (min-width: 2560px) {
+  main form {
+    margin-top: 12em;
+  }
+}
+
 main form #text-input {
   font-family: 'Oswald', sans-serif;
+  text-align: center;
 }
 
 main button {
@@ -84,8 +114,15 @@ main button {
   cursor: pointer;
 }
 
+@media (min-width: 1024px) {
+  main button:hover {
+    background-color: black;
+    font-size: 1.5em;
+  }
+}
+
 main p {
-  margin-top: 1em;
+  margin-top: 0.8em;
   margin-left: 1em;
   margin-right: 1em;
   margin-bottom: 1em;

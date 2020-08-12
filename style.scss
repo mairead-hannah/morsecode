@@ -33,32 +33,35 @@ main {
     font-size: 2em;
     font-weight: 799;
     padding-top: 0.6em;
-    padding-bottom: 0.6em;
     text-shadow: 0 0 5px white, 
                   0 0 10px white,
                   0 0 30px white; 
     
     
     @media (min-width: $mob-medium) {
-      font-size: 2em;
-      padding-top: 0.7em;
-      padding-bottom: 0.7em;
+      font-size: 2.4em;
+      padding-top: 0.4em;
     }
     @media (min-width: $mob-large) {
-      font-size: 2em;
+      font-size: 2.8em;
       font-weight: 900;
-      padding-top: 0.5em;
+      padding-top: 0.3em;
     }
     @media (min-width: $tablet) {
-      font-size: 3em;
-      padding: 0.6em;
+      font-size: 4em;
+      padding-top: 0.4em;
     }
     @media (min-width: $laptop) {
-      font-size: 4em;
+      font-size: 5em;
+      // padding-top: 0.4em;
     }
     @media (min-width: $desktop) {
-      font-size: 5em;
-      padding: 0.8em;
+      font-size: 6em;
+      padding-top: 0.55em;
+    }
+    @media (min-width: $largescreen) {
+      font-size: 8em;
+      padding-top: 1em;
     }
   }
 
@@ -66,8 +69,23 @@ main {
     margin-top: 2em;
     margin-bottom: 1em;
 
+    @media (min-width: $tablet) {
+      margin-top: 3em;
+    }
+    @media (min-width: $laptop) {
+      margin-top: 4em;
+    }
+    @media (min-width: $desktop) {
+      margin-top: 5em;
+    }
+    @media (min-width: $largescreen) {
+      margin-top: 12em;
+    }
+    
+
     #text-input {
       font-family: 'Oswald', sans-serif;
+      text-align: center;
     }
   }
 
@@ -76,19 +94,23 @@ main {
     background-color: #8b3a3a;
     color: white;
     padding: 1em;
-    // font-family: 'UnifrakturCook', cursive;
     font-family: 'Oswald', sans-serif;
     font-size: 1em;
-    // font-variant: small-caps;
-    // text-transform: uppercase;
     border-radius: 10px;
     cursor: pointer;
   }
 
+  @media (min-width: $laptop) {
+    button:hover {
+      background-color: black;
+      font-size: 1.5em;
+    }
+}
+
 
 
   p {
-    margin-top: 1em;
+    margin-top: 0.8em;
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 1em;
