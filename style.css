@@ -18,37 +18,38 @@
 h1 {
   text-align: center;
   font-family: 'UnifrakturCook', cursive;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 799;
-  padding-top: 0.8em;
+  padding-top: 0.2em;
   text-shadow: 0 0 5px white,  0 0 10px white, 0 0 30px white;
 }
 
 @media (min-width: 375px) {
   h1 {
-    font-size: 2.4em;
-    padding-top: 0.5em;
+    font-size: 2.5em;
+    padding-top: 0.7em;
   }
 }
 
 @media (min-width: 425px) {
   h1 {
-    font-size: 2.8em;
+    font-size: 2.5em;
     font-weight: 900;
-    padding-top: 0.3em;
+    padding-top: 0.7em;
   }
 }
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 4em;
-    padding-top: 0.4em;
+    font-size: 4.4em;
+    padding-top: 0.2em;
   }
 }
 
 @media (min-width: 1024px) {
   h1 {
     font-size: 5em;
+    padding-top: 0.4em;
   }
 }
 
@@ -115,6 +116,12 @@ main {
 main form {
   margin-top: 2em;
   margin-bottom: 1em;
+}
+
+@media (min-width: 375px) {
+  main form {
+    margin-top: 3em;
+  }
 }
 
 @media (min-width: 425px) {
