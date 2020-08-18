@@ -63,6 +63,7 @@ h1 {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     max-height: 150vh;
     @media (min-width: $tablet) {
       margin-top: 3em;
@@ -166,6 +167,7 @@ h1 {
 
     p {
       width: 80%;
+      max-height: 60vh;
       overflow: auto;
       padding: 1em;
       padding-bottom: 2em;
@@ -176,6 +178,10 @@ h1 {
       box-shadow: 0 0 10px black, 
       0 0 20px rgb(92, 91, 89),
       0 0 60px rgb(194, 192, 190); 
+
+      @media (min-width: $tablet) {
+        max-height: 50vh;
+      }
 
       @media (min-width: $laptop) {
         height: 100%;

@@ -75,6 +75,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-height: 150vh;
 }
 
@@ -223,6 +226,7 @@ main #translation-container {
 
 main #translation-container p {
   width: 80%;
+  max-height: 60vh;
   overflow: auto;
   padding: 1em;
   padding-bottom: 2em;
@@ -232,6 +236,12 @@ main #translation-container p {
   font-weight: bold;
   -webkit-box-shadow: 0 0 10px black, 0 0 20px #5c5b59, 0 0 60px #c2c0be;
           box-shadow: 0 0 10px black, 0 0 20px #5c5b59, 0 0 60px #c2c0be;
+}
+
+@media (min-width: 768px) {
+  main #translation-container p {
+    max-height: 50vh;
+  }
 }
 
 @media (min-width: 1024px) {
