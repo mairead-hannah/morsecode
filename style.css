@@ -75,11 +75,18 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-height: 150vh;
 }
 
 @media (min-width: 768px) {
   main {
     margin-top: 3em;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    margin-top: 4em;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -87,12 +94,6 @@ main {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-  }
-}
-
-@media (min-width: 1024px) {
-  main {
-    margin-top: 4em;
   }
 }
 
@@ -119,10 +120,24 @@ main form {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   main form {
-    height: 300px;
-    width: 250px;
+    width: 350px;
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 1366px) {
+  main form {
+    width: 500px;
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 2560px) {
+  main form {
+    width: 900px;
+    min-height: 300px;
   }
 }
 
@@ -131,9 +146,12 @@ main form #text-input {
   text-align: center;
   height: 10em;
   width: 80%;
+  -webkit-box-shadow: 0 0 10px black, 0 0 20px #5c5b59, 0 0 60px #c2c0be;
+          box-shadow: 0 0 10px black, 0 0 20px #5c5b59, 0 0 60px #c2c0be;
+  overflow: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   main form #text-input {
     height: 100%;
     width: 100%;
@@ -147,24 +165,27 @@ main #button button {
   padding: 1em;
   font-family: 'Oswald', sans-serif;
   font-size: 1em;
+  text-shadow: 0 0 4px black;
   border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px black, 0 0 20px #5c5b59, 0 0 60px #c2c0be;
+          box-shadow: 0 0 10px black, 0 0 20px #5c5b59, 0 0 60px #c2c0be;
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   main #button button {
     margin-top: 4em;
   }
 }
 
 @media (min-width: 1024px) {
-  main button:hover {
-    background-color: black;
-    font-size: 1.5em;
+  main #button button:hover {
+    background-color: #34757a;
+    font-size: 1.2em;
   }
 }
 
-main #translation-result {
+main #translation-container {
   margin-top: 2em;
   margin-bottom: 1em;
   display: -webkit-box;
@@ -178,36 +199,45 @@ main #translation-result {
           align-items: center;
 }
 
-@media (min-width: 768px) {
-  main #translation-result {
+@media (min-width: 1024px) {
+  main #translation-container {
     margin-top: 3em;
-    width: 250px;
-    height: 300px;
+    width: 350px;
+    min-height: 300px;
   }
 }
 
-main #translation-result p {
+@media (min-width: 1366px) {
+  main #translation-container {
+    width: 500px;
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 2560px) {
+  main #translation-container {
+    width: 900px;
+    min-height: 300px;
+  }
+}
+
+main #translation-container p {
   width: 80%;
+  overflow: auto;
   padding: 1em;
   padding-bottom: 2em;
-  background: #a39d94;
-  color: white;
-  text-shadow: 0 0 2px black, 0 0 10px #cccac6, 0 0 30px #cccac6;
+  background: #c8bbb4;
+  color: #8b3a3a;
   font-size: 1em;
   font-weight: bold;
   -webkit-box-shadow: 0 0 10px black, 0 0 20px #5c5b59, 0 0 60px #c2c0be;
           box-shadow: 0 0 10px black, 0 0 20px #5c5b59, 0 0 60px #c2c0be;
 }
 
-@media (min-width: 768px) {
-  main #translation-result p {
+@media (min-width: 1024px) {
+  main #translation-container p {
     height: 100%;
     width: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  main #translation-result p {
     font-size: 1.5em;
   }
 }

@@ -48,7 +48,6 @@ h1 {
   }
   @media (min-width: $laptop) {
     font-size: 5em;
-    // padding-top: 0.4em;
   }
   @media (min-width: $desktop) {
     font-size: 6em;
@@ -64,13 +63,14 @@ h1 {
     text-align: center;
     display: flex;
     flex-direction: column;
+    max-height: 150vh;
     @media (min-width: $tablet) {
       margin-top: 3em;
-      flex-direction: row;
-      justify-content: space-evenly;
     }
     @media (min-width: $laptop) {
       margin-top: 4em;
+      flex-direction: row;
+      justify-content: space-evenly;
     }
     @media (min-width: $desktop) {
       margin-top: 5em;
@@ -86,9 +86,17 @@ h1 {
     @media (min-width: $mob-large) {
       margin-top: 3em;
     }
-    @media (min-width: $tablet) {
-      height: 300px;
-      width: 250px;
+    @media (min-width: $laptop) {
+      width: 350px;
+      min-height: 300px;
+    }
+    @media (min-width: $desktop) {
+      width: 500px;
+      min-height: 300px;
+    }
+    @media (min-width: $largescreen) {
+      width: 900px;
+      min-height: 300px;
     }
     
 
@@ -97,8 +105,11 @@ h1 {
       text-align: center;
       height: 10em;
       width: 80%;
-      // overflow: auto hidden;
-      @media (min-width: $tablet) {
+      box-shadow: 0 0 10px black, 
+      0 0 20px rgb(92, 91, 89),
+      0 0 60px rgb(194, 192, 190); 
+      overflow: auto;
+      @media (min-width: $laptop) {
         height: 100%;
         width: 100%;
       }
@@ -113,82 +124,67 @@ h1 {
       padding: 1em;
       font-family: 'Oswald', sans-serif;
       font-size: 1em;
+      text-shadow: 0 0 4px black;
       border-radius: 10px;
+      box-shadow: 0 0 10px black, 
+      0 0 20px rgb(92, 91, 89),
+      0 0 60px rgb(194, 192, 190); 
       cursor: pointer;
-      @media (min-width: $tablet) {
+      @media (min-width: $laptop) {
         margin-top: 4em;
       }
     }
+    @media (min-width: $laptop) {
+      button:hover {
+        background-color: #34757a;
+        font-size: 1.2em;
+      }
+  }
   }
 
-  @media (min-width: $laptop) {
-    button:hover {
-      background-color: black;
-      font-size: 1.5em;
-    }
-}
 
-  #translation-result {
+
+  #translation-container {
     margin-top: 2em;
     margin-bottom: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (min-width: $tablet) {
+    @media (min-width: $laptop) {
       margin-top: 3em;
-      width: 250px;
-      height: 300px;
+      width: 350px;
+      min-height: 300px;
+    }
+    @media (min-width: $desktop) {
+      width: 500px;
+      min-height: 300px;
+    }
+    @media (min-width: $largescreen) {
+      width: 900px;
+      min-height: 300px;
     }
 
     p {
       width: 80%;
-      // margin-top: 1.5em;
-      // margin-left: 1em;
-      // margin-right: 1em;
-      // margin-bottom: 1em;
+      overflow: auto;
       padding: 1em;
       padding-bottom: 2em;
-      background: rgb(163, 157, 148);
-      color: rgb(255, 255, 255);
-      text-shadow: 0 0 2px black, 
-      0 0 10px rgb(204, 202, 198),
-      0 0 30px rgb(204, 202, 198); 
+      background: rgb(200, 187, 180);
+      color: #8b3a3a;
       font-size: 1em;
       font-weight: bold;
       box-shadow: 0 0 10px black, 
       0 0 20px rgb(92, 91, 89),
       0 0 60px rgb(194, 192, 190); 
 
-      @media (min-width: $tablet) {
+      @media (min-width: $laptop) {
         height: 100%;
         width: 100%;
-        // margin: 0;
-      }
-      @media (min-width: $laptop) {
         font-size: 1.5em;
       }
     }
   }
-
 }
-
-  // #parchment-container {
-  //   position: relative;
-  //   text-align: center;
-  //   color: black;
-
-  //   #parchment {
-  //     width: 80%;
-  //   }
-
-  //   #morse-code {
-  //     position: absolute;
-  //     top: 20%;
-  //     left: 50%;
-  //     transform: translate(-50%, -50%);
-  //   }
-  // }
-
 
 
 
