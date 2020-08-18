@@ -107,6 +107,7 @@ h1 {
 
     #text-input {
       font-family: 'Oswald', sans-serif;
+      font-size: 1em;
       text-align: center;
       height: 10em;
       width: 80%;
@@ -115,6 +116,7 @@ h1 {
       0 0 60px rgb(194, 192, 190); 
       overflow: auto;
       @media (min-width: $laptop) {
+        font-size: 1.5em;
         height: 100%;
         width: 100%;
       }

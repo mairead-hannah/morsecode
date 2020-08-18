@@ -153,6 +153,7 @@ main form {
 
 main form #text-input {
   font-family: 'Oswald', sans-serif;
+  font-size: 1em;
   text-align: center;
   height: 10em;
   width: 80%;
@@ -163,6 +164,7 @@ main form #text-input {
 
 @media (min-width: 1024px) {
   main form #text-input {
+    font-size: 1.5em;
     height: 100%;
     width: 100%;
   }
