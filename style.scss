@@ -23,56 +23,51 @@ $largescreen: 2560px;
   z-index: -100;
 }
 
-main { 
+h1 {
   text-align: center;
-
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 2em;
+  font-weight: 799;
+  padding-top: 0.8em;
+  text-shadow: 0 0 5px white, 
+                0 0 10px white,
+                0 0 30px white; 
   
-
-  h1 {
-    font-family: 'UnifrakturCook', cursive;
-    font-size: 2em;
-    font-weight: 799;
-    padding-top: 0.6em;
-    text-shadow: 0 0 5px white, 
-                  0 0 10px white,
-                  0 0 30px white; 
-    
-    @media (min-width: $mob-medium) {
-      font-size: 2.4em;
-      padding-top: 0.7em;
-    }
-    @media (min-width: $mob-large) {
-      font-size: 2.8em;
-      font-weight: 900;
-      padding-top: 0.8em;
-    }
-    @media (min-width: $tablet) {
-      font-size: 4em;
-      padding-top: 0.4em;
-    }
-    @media (min-width: $laptop) {
-      font-size: 5em;
-      // padding-top: 0.4em;
-    }
-    @media (min-width: $desktop) {
-      font-size: 6em;
-      padding-top: 0.55em;
-    }
-    @media (min-width: $largescreen) {
-      font-size: 8em;
-      padding-top: 1em;
-    }
+  @media (min-width: $mob-medium) {
+    font-size: 2.4em;
+    padding-top: 0.5em;
   }
+  @media (min-width: $mob-large) {
+    font-size: 2.8em;
+    font-weight: 900;
+    padding-top: 0.3em;
+  }
+  @media (min-width: $tablet) {
+    font-size: 4em;
+    padding-top: 0.4em;
+  }
+  @media (min-width: $laptop) {
+    font-size: 5em;
+    // padding-top: 0.4em;
+  }
+  @media (min-width: $desktop) {
+    font-size: 6em;
+    padding-top: 0.55em;
+  }
+  @media (min-width: $largescreen) {
+    font-size: 8em;
+    padding-top: 1em;
+  }
+}
 
-  form {
-    margin-top: 2em;
-    margin-bottom: 1em;
-
-    @media (min-width: $mob-large) {
-      margin-top: 3em;
-    }
+  main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     @media (min-width: $tablet) {
       margin-top: 3em;
+      flex-direction: row;
+      justify-content: space-evenly;
     }
     @media (min-width: $laptop) {
       margin-top: 4em;
@@ -83,23 +78,47 @@ main {
     @media (min-width: $largescreen) {
       margin-top: 12em;
     }
+
+  form {
+    margin-top: 2em;
+    margin-bottom: 1em;
+
+    @media (min-width: $mob-large) {
+      margin-top: 3em;
+    }
+    @media (min-width: $tablet) {
+      height: 300px;
+      width: 250px;
+    }
     
 
     #text-input {
       font-family: 'Oswald', sans-serif;
       text-align: center;
+      height: 10em;
+      width: 80%;
+      // overflow: auto hidden;
+      @media (min-width: $tablet) {
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 
-  button {
-    width: 7em;
-    background-color: #8b3a3a;
-    color: white;
-    padding: 1em;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1em;
-    border-radius: 10px;
-    cursor: pointer;
+  #button {
+    button {
+      width: 7em;
+      background-color: #8b3a3a;
+      color: white;
+      padding: 1em;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      @media (min-width: $tablet) {
+        margin-top: 4em;
+      }
+    }
   }
 
   @media (min-width: $laptop) {
@@ -109,29 +128,48 @@ main {
     }
 }
 
-
-  p {
-    margin-top: 0.8em;
-    margin-left: 1em;
-    margin-right: 1em;
+  #translation-result {
+    margin-top: 2em;
     margin-bottom: 1em;
-    padding: 1em;
-    padding-bottom: 2em;
-    background: rgb(163, 157, 148);
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 2px black, 
-    0 0 10px rgb(204, 202, 198),
-    0 0 30px rgb(204, 202, 198); 
-    font-size: 1em;
-    font-weight: bold;
-    box-shadow: 0 0 10px black, 
-    0 0 20px rgb(92, 91, 89),
-    0 0 60px rgb(194, 192, 190); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $tablet) {
+      margin-top: 3em;
+      width: 250px;
+      height: 300px;
+    }
 
-    @media (min-width: $laptop) {
-      font-size: 1.5em;
+    p {
+      width: 80%;
+      // margin-top: 1.5em;
+      // margin-left: 1em;
+      // margin-right: 1em;
+      // margin-bottom: 1em;
+      padding: 1em;
+      padding-bottom: 2em;
+      background: rgb(163, 157, 148);
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 2px black, 
+      0 0 10px rgb(204, 202, 198),
+      0 0 30px rgb(204, 202, 198); 
+      font-size: 1em;
+      font-weight: bold;
+      box-shadow: 0 0 10px black, 
+      0 0 20px rgb(92, 91, 89),
+      0 0 60px rgb(194, 192, 190); 
+
+      @media (min-width: $tablet) {
+        height: 100%;
+        width: 100%;
+        // margin: 0;
+      }
+      @media (min-width: $laptop) {
+        font-size: 1.5em;
+      }
     }
   }
+
 }
 
   // #parchment-container {

@@ -15,57 +15,96 @@
   z-index: -100;
 }
 
-main {
+h1 {
   text-align: center;
-}
-
-main h1 {
   font-family: 'UnifrakturCook', cursive;
   font-size: 2em;
   font-weight: 799;
-  padding-top: 0.6em;
+  padding-top: 0.8em;
   text-shadow: 0 0 5px white,  0 0 10px white, 0 0 30px white;
 }
 
 @media (min-width: 375px) {
-  main h1 {
+  h1 {
     font-size: 2.4em;
-    padding-top: 0.7em;
+    padding-top: 0.5em;
   }
 }
 
 @media (min-width: 425px) {
-  main h1 {
+  h1 {
     font-size: 2.8em;
     font-weight: 900;
-    padding-top: 0.8em;
+    padding-top: 0.3em;
   }
 }
 
 @media (min-width: 768px) {
-  main h1 {
+  h1 {
     font-size: 4em;
     padding-top: 0.4em;
   }
 }
 
 @media (min-width: 1024px) {
-  main h1 {
+  h1 {
     font-size: 5em;
   }
 }
 
 @media (min-width: 1366px) {
-  main h1 {
+  h1 {
     font-size: 6em;
     padding-top: 0.55em;
   }
 }
 
 @media (min-width: 2560px) {
-  main h1 {
+  h1 {
     font-size: 8em;
     padding-top: 1em;
+  }
+}
+
+main {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-top: 3em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    margin-top: 4em;
+  }
+}
+
+@media (min-width: 1366px) {
+  main {
+    margin-top: 5em;
+  }
+}
+
+@media (min-width: 2560px) {
+  main {
+    margin-top: 12em;
   }
 }
 
@@ -82,34 +121,26 @@ main form {
 
 @media (min-width: 768px) {
   main form {
-    margin-top: 3em;
-  }
-}
-
-@media (min-width: 1024px) {
-  main form {
-    margin-top: 4em;
-  }
-}
-
-@media (min-width: 1366px) {
-  main form {
-    margin-top: 5em;
-  }
-}
-
-@media (min-width: 2560px) {
-  main form {
-    margin-top: 12em;
+    height: 300px;
+    width: 250px;
   }
 }
 
 main form #text-input {
   font-family: 'Oswald', sans-serif;
   text-align: center;
+  height: 10em;
+  width: 80%;
 }
 
-main button {
+@media (min-width: 768px) {
+  main form #text-input {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+main #button button {
   width: 7em;
   background-color: #8b3a3a;
   color: white;
@@ -120,6 +151,12 @@ main button {
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  main #button button {
+    margin-top: 4em;
+  }
+}
+
 @media (min-width: 1024px) {
   main button:hover {
     background-color: black;
@@ -127,11 +164,30 @@ main button {
   }
 }
 
-main p {
-  margin-top: 0.8em;
-  margin-left: 1em;
-  margin-right: 1em;
+main #translation-result {
+  margin-top: 2em;
   margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  main #translation-result {
+    margin-top: 3em;
+    width: 250px;
+    height: 300px;
+  }
+}
+
+main #translation-result p {
+  width: 80%;
   padding: 1em;
   padding-bottom: 2em;
   background: #a39d94;
@@ -143,8 +199,15 @@ main p {
           box-shadow: 0 0 10px black, 0 0 20px #5c5b59, 0 0 60px #c2c0be;
 }
 
+@media (min-width: 768px) {
+  main #translation-result p {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 @media (min-width: 1024px) {
-  main p {
+  main #translation-result p {
     font-size: 1.5em;
   }
 }
